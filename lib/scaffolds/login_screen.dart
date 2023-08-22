@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:admin_one/scaffolds/app_page.dart';
-import 'package:admin_one/components/my_login_textfield.dart';
+import 'package:admin_one/scaffolds/app_screen.dart';
+import 'package:admin_one/components/login_textfield.dart';
 
-class LoginPage extends StatelessWidget {
-  LoginPage({super.key});
+class LoginScreen extends StatelessWidget {
+  LoginScreen({super.key});
 
   final usernameController = TextEditingController();
   final passwordController = TextEditingController();
@@ -14,17 +14,19 @@ class LoginPage extends StatelessWidget {
       body: Center(
         child: Column(
           children: [
-            const SizedBox(
+            SizedBox(
               height: 50,
             ),
             Icon(
+              // depe icon
               Icons.lock,
               size: 100,
             ),
-            const SizedBox(
+            SizedBox(
               height: 50,
             ),
             Text(
+              // depe tulisan welcome
               'W E L C O M E',
               style: TextStyle(
                 color: Colors.black,
@@ -32,10 +34,11 @@ class LoginPage extends StatelessWidget {
                 fontWeight: FontWeight.bold,
               ),
             ),
-            const SizedBox(
+            SizedBox(
               height: 25,
             ),
-            MyLoginTextField(
+            LoginTextField(
+              // depe field username
               controller: usernameController,
               hintText: 'Username',
               obscureText: false,
@@ -43,7 +46,8 @@ class LoginPage extends StatelessWidget {
             SizedBox(
               height: 10.0,
             ),
-            MyLoginTextField(
+            LoginTextField(
+              // depe field password
               controller: passwordController,
               hintText: 'Password',
               obscureText: true,
@@ -52,11 +56,12 @@ class LoginPage extends StatelessWidget {
               height: 20.0,
             ),
             Container(
+              // depe tombol login
               child: ElevatedButton(
                 onPressed: () {
                   Navigator.pop(context);
                   Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => AppPage()));
+                      MaterialPageRoute(builder: (context) => AppScreen()));
                 },
                 style: ElevatedButton.styleFrom(
                   backgroundColor: Colors.grey,

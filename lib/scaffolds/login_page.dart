@@ -14,19 +14,17 @@ class LoginPage extends StatelessWidget {
       body: Center(
         child: Column(
           children: [
-            SizedBox(
+            const SizedBox(
               height: 50,
             ),
             Icon(
-              // depe icon
               Icons.lock,
               size: 100,
             ),
-            SizedBox(
+            const SizedBox(
               height: 50,
             ),
             Text(
-              // depe tulisan welcome
               'W E L C O M E',
               style: TextStyle(
                 color: Colors.black,
@@ -34,11 +32,10 @@ class LoginPage extends StatelessWidget {
                 fontWeight: FontWeight.bold,
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 25,
             ),
             MyLoginTextField(
-              // depe field username
               controller: usernameController,
               hintText: 'Username',
               obscureText: false,
@@ -47,7 +44,6 @@ class LoginPage extends StatelessWidget {
               height: 10.0,
             ),
             MyLoginTextField(
-              // depe field password
               controller: passwordController,
               hintText: 'Password',
               obscureText: true,
@@ -56,7 +52,6 @@ class LoginPage extends StatelessWidget {
               height: 20.0,
             ),
             Container(
-              // depe tombol login
               child: ElevatedButton(
                 onPressed: () {
                   Navigator.pop(context);

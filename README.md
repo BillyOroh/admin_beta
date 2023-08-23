@@ -1,4 +1,10 @@
 changes:
+
+patch-4:
+- coba-coba beking depe form validation
+- coba-coba push data dari textfield ke screen laeng (profil)
+
+patch-3:
 - app_page, login_page so rename jadi app_screen, login_screen
 - switch case for pindah-pindah page di app_screen so ganti jadi List
 - yang row navigasi so extract dari app_screen, so jadi widget sandiri di file berbeda, navigation_panel.dart, sama deng tu textfield

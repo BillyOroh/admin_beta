@@ -20,6 +20,9 @@ class DashPage extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
               Container(
+                decoration: BoxDecoration(
+                  border: Border.all(color: Colors.grey),
+                ),
                 alignment: Alignment.center,
                 //color: Colors.red,
                 padding: EdgeInsets.all(20.0),
@@ -37,6 +40,9 @@ class DashPage extends StatelessWidget {
                 ),
               ),
               Container(
+                decoration: BoxDecoration(
+                  border: Border.all(color: Colors.grey),
+                ),
                 alignment: Alignment.center,
                 //color: Colors.green,
                 padding: EdgeInsets.all(20.0),
@@ -66,6 +72,9 @@ class DashPage extends StatelessWidget {
                 ),
               ),
               Container(
+                decoration: BoxDecoration(
+                  border: Border.all(color: Colors.grey),
+                ),
                 alignment: Alignment.center,
                 //color: Colors.blue,
                 padding: EdgeInsets.all(20.0),

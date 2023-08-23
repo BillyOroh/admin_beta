@@ -2,7 +2,14 @@ changes:
 
 patch-4:
 - coba-coba beking depe form validation
+![ss1](https://github.com/BillyOroh/admin_beta/assets/45728852/b2ee8b8b-68c1-4e38-820c-12d647736c58)
+![ss2](https://github.com/BillyOroh/admin_beta/assets/45728852/c1246f5e-166f-4511-95d0-4813433cf232)
+
 - coba-coba push data dari textfield ke screen laeng (profil)
+![ss3](https://github.com/BillyOroh/admin_beta/assets/45728852/43786e03-6436-4daf-8740-736c08472c35)
+![ss4](https://github.com/BillyOroh/admin_beta/assets/45728852/a556de51-9799-4190-a581-077bfaa33759)
+
+
 
 patch-3:
 - app_page, login_page so rename jadi app_screen, login_screen

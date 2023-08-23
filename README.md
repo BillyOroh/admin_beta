@@ -6,7 +6,7 @@ patch-4:
 ![ss2](https://github.com/BillyOroh/admin_beta/assets/45728852/c1246f5e-166f-4511-95d0-4813433cf232)
 
 - coba-coba push data dari textfield ke screen laeng (profil)
-![ss3](https://github.com/BillyOroh/admin_beta/assets/45728852/43786e03-6436-4daf-8740-736c08472c35)
+![ss3](https://github.com/BillyOroh/admin_beta/assets/45728852/42fc3ed6-8ca8-4375-8b21-90a6f76ead66)
 ![ss4](https://github.com/BillyOroh/admin_beta/assets/45728852/a556de51-9799-4190-a581-077bfaa33759)
 
 

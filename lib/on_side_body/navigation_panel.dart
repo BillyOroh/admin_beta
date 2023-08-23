@@ -4,11 +4,13 @@ import 'package:admin_one/components/profile.dart';
 class NavPanel extends StatelessWidget {
   final selectedIndex;
   final onDestinationSelected;
+  final nomor;
 
-  const NavPanel({
+  NavPanel({
     super.key,
     required this.selectedIndex,
     required this.onDestinationSelected,
+    required this.nomor,
   });
 
   @override
@@ -43,7 +45,7 @@ class NavPanel extends StatelessWidget {
           ],
         ),
         // widget profil yang di bawah
-        ProfileField(),
+        ProfileField(nomor: nomor),
       ],
     );
   }

@@ -6,7 +6,12 @@ import 'package:admin_one/on_main_body/mapping_page.dart';
 import 'package:admin_one/on_side_body/navigation_panel.dart';
 
 class AppScreen extends StatefulWidget {
-  const AppScreen({Key? key}) : super(key: key);
+  const AppScreen({
+    Key? key,
+    required this.nomor,
+  }) : super(key: key);
+
+  final nomor;
 
   @override
   State<AppScreen> createState() => _AppScreenState();
@@ -14,6 +19,7 @@ class AppScreen extends StatefulWidget {
 
 class _AppScreenState extends State<AppScreen> {
   var selectedIndex = 0;
+  var nomor = '';
   // 4 page di main body
   final List pages = [
     DashPage(),
@@ -30,6 +36,7 @@ class _AppScreenState extends State<AppScreen> {
         children: [
           // Side body yang di kiri
           NavPanel(
+            nomor: widget.nomor,
             selectedIndex: selectedIndex,
             onDestinationSelected: (value) {
               setState(() {

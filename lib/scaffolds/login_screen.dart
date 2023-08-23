@@ -1,13 +1,16 @@
 import 'package:flutter/material.dart';
-import 'package:admin_one/scaffolds/app_screen.dart';
-import 'package:admin_one/components/login_textfield.dart';
+import 'package:admin_one/components/login_form.dart';
 
-class LoginScreen extends StatelessWidget {
+class LoginScreen extends StatefulWidget {
   LoginScreen({super.key});
 
-  final usernameController = TextEditingController();
-  final passwordController = TextEditingController();
+  @override
+  State<LoginScreen> createState() => _LoginScreenState();
+}
 
+class _LoginScreenState extends State<LoginScreen> {
+  final _formState = GlobalKey<FormState>();
+  final textController = TextEditingController();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -37,38 +40,7 @@ class LoginScreen extends StatelessWidget {
             SizedBox(
               height: 25,
             ),
-            LoginTextField(
-              // depe field username
-              controller: usernameController,
-              hintText: 'Username',
-              obscureText: false,
-            ),
-            SizedBox(
-              height: 10.0,
-            ),
-            LoginTextField(
-              // depe field password
-              controller: passwordController,
-              hintText: 'Password',
-              obscureText: true,
-            ),
-            SizedBox(
-              height: 20.0,
-            ),
-            Container(
-              // depe tombol login
-              child: ElevatedButton(
-                onPressed: () {
-                  Navigator.pop(context);
-                  Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => AppScreen()));
-                },
-                style: ElevatedButton.styleFrom(
-                  backgroundColor: Colors.grey,
-                ),
-                child: Text('L O G I N'),
-              ),
-            ),
+            LoginForm(formState: _formState, textController: textController),
           ],
         ),
       ),

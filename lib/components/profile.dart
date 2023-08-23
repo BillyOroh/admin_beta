@@ -2,8 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:admin_one/scaffolds/login_screen.dart';
 
 class ProfileField extends StatelessWidget {
+  final nomor;
+
   const ProfileField({
     super.key,
+    required this.nomor,
   });
 
   @override
@@ -29,9 +32,9 @@ class ProfileField extends StatelessWidget {
             padding: EdgeInsets.all(5.0),
             child: Column(
               children: [
-                Text('Johnny Minahasa'),
+                Text('WELCOME'),
                 Text(
-                  'john_m@gmail.com',
+                  nomor,
                   style: TextStyle(color: Colors.grey),
                 ),
               ],
